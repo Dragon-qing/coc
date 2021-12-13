@@ -13,10 +13,10 @@ def spider():
         'Referer': 'http://www.aiwancoc.com/'
     }
 
-    url = "http://www.aiwancoc.com/php/yzmjpeg.php"
+    url = "http://www.aiwancoc.com/php/yzmjpeg55659.php"
     for i in range(10):
         session.params = {
-            "tmp": random.random()
+            "t": random.random()
         }
         response = session.get(url)
         with open("./yzm_{}.png".format(i), "wb") as p:
